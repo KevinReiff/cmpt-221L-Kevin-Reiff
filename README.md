@@ -1,4 +1,4 @@
-# cmpt-221L-Kevin-Reiff :computer:
+# cmpt-221L-Kevin-Reiff
 
 ## Introduction :wave:
 
