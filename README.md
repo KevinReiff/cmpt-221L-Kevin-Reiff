@@ -1,4 +1,4 @@
-# cmpt-221L-Kevin-Reiff
+# CMPT 221L - Software Development II
 
 ## Introduction :wave:
 
