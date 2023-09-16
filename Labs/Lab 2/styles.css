@@ -1,4 +1,6 @@
-/* Style for the body of the document */
+/* Sets up the font, flex sets up a  horizontal and vertical axis
+and center aligns child elements, sets the height as the full 100, 
+no margins, and makes the background grayish */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -9,7 +11,8 @@ body {
     background-color: #c0c0c0;
 }
 
-/* Style for the calculator container */
+/* Adds a black border around the calc body, rounds the corners,
+makes any 'out of bounds' content hidden and sets the calc width and color */
 .calculator {
     border: 1px solid #000000;
     border-radius: 10px;
@@ -18,7 +21,9 @@ body {
     background-color: #eee;
 }
 
-/* Style for the display screen of the calculator */
+/* Sets things up for the display, such as
+width of display to 100% of container - 2px for the border,
+sets font-size, border color and aligns text to the left side */
 #display {
     width: calc(100% - 2px);
     font-size: 2em;
@@ -27,13 +32,16 @@ body {
     text-align: left;
 }
 
-/* Grid layout for the buttons */
+/* Sets up a grid layout and divides into 4 columns each 
+taking up one fr */
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-/* Style for the buttons */
+/* Sets up button styling with font, extra padding space
+changes the cursor to a hand when hovering over a button, 
+transitions background color, sets initial color and text color on button */
 button {
     font-size: 1.5em;
     padding: 20px;
@@ -43,7 +51,7 @@ button {
     color: white;
 }
 
-/* Hover effect for the buttons */
+/* Changes the background color to green when hovered over  */
 button:hover {
     background-color: #08e79d;
 }
