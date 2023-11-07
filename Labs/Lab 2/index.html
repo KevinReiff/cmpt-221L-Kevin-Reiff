@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    
+    <!-- Links the styles.css file to this page to provide
+    all of the styling for the calculator and buttons (backgrounds
+    borders, fonts etc.)  -->
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <!-- Calculator container -->
+    <div class="calculator">
+
+        <!-- Creates an element with the id of 'display', sets it to 'text'
+        and makes it so it cannot be edited via 'readonly' -->
+        <input id="display" type="text" readonly>
+        
+        <!-- Defines what happens when the buttons are clicked, 
+        numbers get appended, operators get logged and set -->
+        <div class="buttons">
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="executeOperation('+')">+</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="executeOperation('-')">-</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="executeOperation('*')">*</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="executeOperation('/')">/</button>
+        </div>
+    </div>
+    <!-- Links the script.js file to this page, which contains
+    the functionality of the calculator  -->
+    <script src="script.js"></script>
+</body>
+</html>

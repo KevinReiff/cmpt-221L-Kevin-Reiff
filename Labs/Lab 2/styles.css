@@ -1,0 +1,49 @@
+/* Style for the body of the document */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #c0c0c0;
+}
+
+/* Style for the calculator container */
+.calculator {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #eee;
+}
+
+/* Style for the display screen of the calculator */
+#display {
+    width: calc(100% - 2px);
+    font-size: 2em;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Grid layout for the buttons */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Style for the buttons */
+button {
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #444;
+    color: white;
+}
+
+/* Hover effect for the buttons */
+button:hover {
+    background-color: #08e79d;
+}
